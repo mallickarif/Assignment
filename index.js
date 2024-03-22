@@ -44,7 +44,7 @@ Category.insertMany([
 //     console.error("Error generating sample data:", error);
 // });
 
-   aggregate([
+   Product.aggregate([
     {
       $lookup: {
         from: "categories",
